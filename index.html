@@ -8,66 +8,68 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>🌍 Travel Cost Planner: Copenhagen to Los Angeles</h1>
-        <form id="costForm">
-            <div class="input-group">
-                <label for="flights">✈️ Flight Tickets (DKK):</label>
-                <input type="number" id="flights" oninput="calculateTotal()" placeholder="Enter cost per person">
-            </div>
+    <div class="background">
+        <div class="overlay"></div>
+        <div class="container">
+            <h1>🌴 Travel Cost Planner: <br> Copenhagen to Los Angeles</h1>
+            <form id="costForm">
+                <div class="input-group">
+                    <label for="flights">✈️ Flight Tickets (DKK):</label>
+                    <input type="number" id="flights" oninput="calculateTotal()" placeholder="Enter cost per person">
+                </div>
 
-            <div class="input-group">
-                <label for="accommodation">🏨 Accommodation (DKK):</label>
-                <input type="number" id="accommodation" oninput="calculateTotal()" placeholder="Cost per night">
-            </div>
+                <div class="input-group">
+                    <label for="accommodation">🏨 Accommodation (DKK):</label>
+                    <input type="number" id="accommodation" oninput="calculateTotal()" placeholder="Cost per night">
+                </div>
 
-            <div class="input-group">
-                <label for="food">🍽️ Food & Dining (DKK):</label>
-                <input type="number" id="food" oninput="calculateTotal()" placeholder="Daily meal cost">
-            </div>
+                <div class="input-group">
+                    <label for="food">🍽️ Food & Dining (DKK):</label>
+                    <input type="number" id="food" oninput="calculateTotal()" placeholder="Daily meal cost">
+                </div>
 
-            <div class="input-group">
-                <label for="transport">🚗 Transportation (DKK):</label>
-                <input type="number" id="transport" oninput="calculateTotal()" placeholder="Car rental or public transport">
-            </div>
+                <div class="input-group">
+                    <label for="transport">🚗 Transportation (DKK):</label>
+                    <input type="number" id="transport" oninput="calculateTotal()" placeholder="Car rental or public transport">
+                </div>
 
-            <div class="input-group">
-                <label for="insurance">💼 Travel Insurance (DKK):</label>
-                <input type="number" id="insurance" oninput="calculateTotal()" placeholder="Insurance cost">
-            </div>
+                <div class="input-group">
+                    <label for="insurance">💼 Travel Insurance (DKK):</label>
+                    <input type="number" id="insurance" oninput="calculateTotal()" placeholder="Insurance cost">
+                </div>
 
-            <div class="input-group">
-                <label for="shopping">🎁 Shopping & Souvenirs (DKK):</label>
-                <input type="number" id="shopping" oninput="calculateTotal()" placeholder="Set your shopping budget">
-            </div>
+                <div class="input-group">
+                    <label for="shopping">🎁 Shopping & Souvenirs (DKK):</label>
+                    <input type="number" id="shopping" oninput="calculateTotal()" placeholder="Set your shopping budget">
+                </div>
 
-            <div class="input-group">
-                <label for="buffer">💵 Unexpected Costs Buffer (10%):</label>
-                <input type="number" id="buffer" disabled>
-            </div>
+                <div class="input-group">
+                    <label for="buffer">💵 Unexpected Costs Buffer (10%):</label>
+                    <input type="number" id="buffer" disabled>
+                </div>
 
-            <div class="input-group total">
-                <label for="total">💵 Total Cost for 1 Person (DKK):</label>
-                <input type="number" id="total" disabled>
-            </div>
+                <div class="input-group total">
+                    <label for="total">💵 Total Cost for 1 Person (DKK):</label>
+                    <input type="number" id="total" disabled>
+                </div>
 
-            <div class="input-group total">
-                <label for="total2">💵 Total Cost for 2 People (DKK):</label>
-                <input type="number" id="total2" disabled>
-            </div>
+                <div class="input-group total">
+                    <label for="total2">💵 Total Cost for 2 People (DKK):</label>
+                    <input type="number" id="total2" disabled>
+                </div>
 
-            <div class="currency-conversion">
-                <label for="usdToDkk">💱 Convert to USD: </label>
-                <input type="number" id="usdToDkk" value="0.15" oninput="calculateTotal()" placeholder="Enter conversion rate">
-            </div>
+                <div class="currency-conversion">
+                    <label for="usdToDkk">💱 Convert to USD: </label>
+                    <input type="number" id="usdToDkk" value="0.15" oninput="calculateTotal()" placeholder="Enter conversion rate">
+                </div>
 
-            <div class="input-group total">
-                <label for="totalUsd">💵 Total Cost in USD for 2 People:</label>
-                <input type="number" id="totalUsd" disabled>
-            </div>
-        </form>
+                <div class="input-group total">
+                    <label for="totalUsd">💵 Total Cost in USD for 2 People:</label>
+                    <input type="number" id="totalUsd" disabled>
+                </div>
+            </form>
+        </div>
     </div>
-
     <script src="script.js"></script>
 </body>
 </html>
